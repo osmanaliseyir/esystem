@@ -1,0 +1,93 @@
+body { background:url(../images/bodyBg.jpg); margin:0; font-family: Arial,Tahoma; font-size:12px; }
+
+/************************** LINKS *************************************/
+a { color:#CC3333; text-decoration: none; }
+a:hover { text-decoration: underline;}
+
+/************************** TITLES ************************************/
+h2 { margin: 0; padding:0; font-weight: bold; font-size:16px; color: #CC3333;}
+h3 { margin: 0; padding:0; font-weight: normal; font-family: Arial; color:#666666; font-size:16px; letter-spacing: -0.5px; padding:5px;}
+
+/************************** THEME LAYOUT ******************************/
+#header  {  background: url(../images/topNav.jpg); height: 35px; border-bottom:1px solid #FFFFFF; }
+#wrapper {  width:990px; margin:auto; height:35px; position:relative; }
+#user    {  position:absolute; left:0px; top:7px; }
+#user  img  {  float:left; }
+#user span  {  color:#FFFFFF; font-size: 11px; float:left; display: block; padding:5px 10px;}
+#footer { height: 32px; width:990px; margin: auto; position: relative; }
+#validators { position:absolute; text-align: right; top:45px; right:10px; width:200px;}
+
+/************************* TOPNAV MENU ********************************/
+#topmenu {  position:absolute; right: 0px; top:0px;}
+#topmenu ul { list-style: none; list-style-image: none; margin: 0; padding:0;}
+#topmenu ul li { display: block; height:35px; float:left; border-right: 1px solid #2F2F2F}
+#topmenu ul li:first-child { border-left: 1px solid #2F2F2F}
+#topmenu ul li a  { display: block; float:left;}
+#topmenu ul li a:hover  { background:#000000;}
+#topmenu ul li img  { display: block; float:left; margin:12px 0 0 10px; }
+#topmenu ul li span { float: left; display: block; padding: 11px 20px 10px 10px; font-size: 11px; color:#FFFFFF }
+#topmenu ul li span:hover { color:#CC3333; }
+#content { margin:3px auto; width:990px;}
+
+/********************* MENU && SUBMENU ***********************/
+#menu { margin: auto; width:990px; height: 35px; background: url(../images/menu_bg.jpg) repeat-x; border-bottom: 1px solid #CCCCCC;}
+#submenu { height: 32px; background: url(../images/submenu_bg.jpg) repeat-x; width:990px; margin: auto; position: relative; }
+#submenu ul { list-style: none; list-style-image: none; margin: 0; padding:0;}
+#submenu ul li { float: left; padding-top:8px; padding-bottom:8px;}
+#submenu ul li a { color:#F3CDCD; text-decoration: none; float: left; display: block; padding:2px 10px 2px 10px; border-right: 1px solid #A82B2B; }
+#submenu ul li a:hover { color:#FFFFFF; }
+#submenu .date { position:absolute; right:10px; top:10px; color:white; font-size:11px;}
+#submenu .date img { display: block; padding-right: 4px; float: left;}
+
+/********************* PAGE LAYOUT ***************************/
+#leftPanel { float:left; width:200px;}
+#centerPanel{ float:left; width:582px; margin-left: 4px;}
+#rightPanel{ float:left; width:200px; margin-left: 4px;}
+
+/********************* BLOCK *********************************/
+.block { border:1px solid #D5D5D5; background: #FFFFFF; display: inline-block; width:100%; }
+.block .head { border-bottom:1px solid #EEEEEE; position: relative; background: url(../images/block-top.jpg) repeat-x; height: 32px; }
+.block .head span.right { position: absolute; right:8px; top:0px; }
+
+/********************* WARNINGS ******************************/
+.warning { width:auto; border: 1px solid #FFCC33; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#FFE28C url(../images/warnings/warning.png) no-repeat 10px 8px ;}
+.pending { width:auto; border: 1px solid #FFCC33; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#FFE28C url(../images/warnings/pending.gif) no-repeat 10px 8px ;}
+.success { width:auto; border: 1px solid #33CC00; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#CCFFBB url(../images/warnings/success.png) no-repeat 10px 8px ;}
+.alert { width:auto; border: 1px solid #CC0000; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#FFCCCC url(../images/warnings/alert.png) no-repeat 10px 8px ;}
+
+/********************* FORM **********************************/
+.formTable label { font-family: Tahoma; color:#666666; font-weight: bold; padding:5px 0 5px 0; }
+.formTable label:after { content : ":"}
+.formTable td { border-bottom:1px solid #EEEEEE; }
+.formTable tr:last-child td { border-bottom:0px; }
+.formTable input[type=text],.formTable input[type=textfield],.formTable input[type=password],.formTable textarea,.formTable select { border-top:1px solid #BBBBBB; border-left:1px solid #BBBBBB; border-right:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; font-family:Arial,Tahoma; color:#333333; font-size:12px; padding:3px;  }
+
+/********************* BUTTONS *******************************/
+button { font-size:12px; font-family:Arial; }
+button.blue { background: #5BADFF; color:#F4FAFF; font-weight: bold; padding:3px 10px 3px 10px; border:1px solid #0065CA; -moz-border-radius:3px; -moz-box-shadow:inset 0 1px 0 0 #B7DBFF,0 2px 2px -1px #A2A2A2 !important; text-shadow:-1px -1px 0 #0065CA; border-radius:3px;  }
+button.blue:hover {background: #87C1E9;  cursor:pointer; -moz-box-shadow:inset 0 1px 0 0 #B7DBFF,0 2px 2px -1px #666666 !important; }
+
+button { font-size:12px; font-family:Arial; }
+button.grey { background: #CCCCCC; color:#666666; font-weight: bold; padding:3px 10px 3px 10px; border:1px solid #666666; -moz-border-radius:3px; -moz-box-shadow:inset 0 1px 0 0 #EEEEEE,0 2px 2px -1px #A2A2A2 !important; text-shadow:-1px -1px 0 #EEEEEE; border-radius:3px;  }
+button.grey:hover {background: #DDDDDD;  cursor:pointer; -moz-box-shadow:inset 0 1px 0 0 #EEEEEE,0 2px 2px -1px #666666 !important; }
+
+/*********************** LIST MENU *****************************/
+.listMenu { margin: 0; padding:0; list-style: none; list-style-image: none;}
+.listMenu li { border-bottom:1px solid #EEEEEE; }
+.listMenu li a { color:#333333; text-decoration: none; padding: 5px 5px 5px 10px; background: url(../images/listmenu-bg.jpg) repeat-x top; display: block; }
+.listMenu li a.title { color:#CC3333; font-weight: bold; background:#FFFFFF; text-decoration: underline;}
+.listMenu li a:hover { color:#CC3333; background: url(../images/listmenu-bg.jpg) 0 1px }
+
+/********************* ITEM  *********************************/
+.item { display: block; padding-top:10px; margin:10px; text-align: center; background:url(../images/item.jpg) no-repeat; width:100px; height:70px;}
+.item:hover { background-position:0 -80px;}
+.item span { display: block; padding-top:3px; color:#333333; font-weight: bold; font-size:11px;}
+
+/********************* OTHER *********************************/
+.fl { float:left;}
+img {border:none; vertical-align: middle;}
+.smalldesc { font-size:11px; color:#CC0000;}
+.fix { clear: both }
+
+#pagination { height: 20px; padding: 8px 4px 4px 4px;}
+#pagination a { margin: 3px;}
