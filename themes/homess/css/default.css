@@ -1,0 +1,132 @@
+/**
+* Style.css
+*/
+
+@import url('reset.css');
+
+
+@font-face {
+font-family: 'Museo500';
+src: url('http://www.e-meslek.net/public/fonts/museo500-regular-webfont.eot');
+src: url('http://www.e-meslek.net/public/fonts/museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('http://www.e-meslek.net/public/fonts/museo500-regular-webfont.woff') format('woff'),
+url('http://www.e-meslek.net/public/fonts/museo500-regular-webfont.ttf') format('truetype'),
+url('http://www.e-meslek.net/public/fonts/museo500-regular-webfont.svg#Museo500') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Museo700';
+src: url('http://www.e-meslek.net/public/fonts/museo700-regular-webfont.eot');
+src: url('http://www.e-meslek.net/public/fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('http://www.e-meslek.net/public/fonts/museo700-regular-webfont.ttf') format('truetype'),
+url('http://www.e-meslek.net/public/fonts/museo700-regular-webfont.svg#Museo700') format('svg');
+font-weight: normal;
+font-style: normal;
+} 
+
+/** LAYOUT */
+body { margin:0; font-family: Tahoma; font-size:12px; color:#333333; background:url(../images/bg.jpg) repeat-x top center #EEEEEE;}
+#head-wrapper {background: url(../images/top.png) repeat-x;  }
+#wrapper{ margin:auto; width:990px; }
+#body-wrapper{ border-left:1px solid #CCCCCC; border-right: 1px solid #CCCCCC; border-bottom:1px solid #CCCCCC; background: #FFFFFF; width:990px; display:inline-block; }
+#header { height: 291px; width:990px; margin: auto; position: relative;}
+#logo { position: absolute; top:12px; left:0px; width:300px; height:31px; background: url(../images/logo.png) no-repeat}
+
+#sub-header { height: 240px;}
+#split { position:absolute; top:80px; left:205px; display:block; width:516px; height: 155px; background: url(../images/split.png) no-repeat;}
+
+#topnav {  position: absolute; top:17px; right:0; }
+#topnav ul { list-style: none; margin: 0; padding:6px 3px 3px 3px;}
+#topnav ul li { float:right; margin-right:20px;}
+#topnav ul li a { font-family: 'Museo700',Tahoma; font-size:13px; color:#FFFFFF;}
+
+#slogan { width:603px; height:75px; position:absolute; top:80px; left:0; background: url(../images/slogan.png) no-repeat;}
+#subslogan {  position:absolute; top:206px; font-size:14px; left:0;}
+#signup { position: absolute; top:150px; background: url(../images/signup.png) no-repeat; width:199px; height:40px; display:block;  }
+#signup:hover { cursor: pointer; background: url(../images/signup.png) no-repeat 0 -40px; width:199px; height:40px; display:block;  }
+
+#loginContainer { position: absolute; top:70px; right:0; width:246px; height: 83px; background: url(../images/loginbg.png) no-repeat; }
+#login { position: absolute; top:160px; right:0; background: url(../images/login.png) no-repeat; width:144px; height:40px; display:block;  }
+#login:hover { cursor: pointer; background: url(../images/login.png) no-repeat 0 -40px; width:144px; height:40px; display:block;  }
+
+#headerLogin { color:#FFFFFF; font-size:11px; position: absolute; padding:4px; top:45px; left:230px; background: url(../images/headerLogin.png) no-repeat; width:723px; height:28px; }
+#headerLogin #l-email { padding:7px 10px 3px 30px; color:#333333; font-size:12px; border:0; background: none; width:160px; }
+#headerLogin #l-password { margin-left:5px; color:#333333; padding:7px 10px 3px 20px; font-size:12px; border:0; background: none; width:165px; }
+#headerLogin img { margin-left:5px;}
+
+
+#nav { position: absolute; top:239px; height: 53px; width:990px; background: url(../images/nav-bg.jpg) repeat-x; border-top:1px solid #0D4D68; border-left:1px solid #0D4D68; border-right: 1px solid #0D4D68; }
+#nav ul {list-style: none; padding:0; margin: 0;}
+#nav ul li {float:left; margin: 3px 3px 0 3px; text-align: center; }
+#nav ul li a {display:block; padding-top:6px; font-size:11px; color:#FFFFFF; width:84px; height: 43px;}
+#nav ul li:hover {background:#4AB8E9;}
+#nav ul li.selected { background: url(../images/nav-hover.jpg) repeat-x; border-left:1px solid #676767; border-right: 1px solid #676767; }
+#nav ul li.selected a { color:#333333; padding-top: 7px; }
+
+#nav ul li a.home span { width:22px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) no-repeat;}
+#nav ul li a.forums span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -22px 0  no-repeat;}
+#nav ul li a.isbirlik span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -45px 0  no-repeat;}
+#nav ul li a.haberler span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -68px 0  no-repeat;}
+#nav ul li a.etkinlikler span { width:22px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -91px 0  no-repeat;}
+#nav ul li a.ilanlar span { width:21px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -114px 0  no-repeat;}
+#nav ul li a.firmalar span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -135px 0  no-repeat;}
+#nav ul li a.makaleler span { width:20px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -158px 0  no-repeat;}
+#nav ul li a.videolar span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -178px 0  no-repeat;}
+#nav ul li a.download span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -201px 0  no-repeat;}
+
+#nav ul li.selected a.home span { width:22px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) 0 -21px;}
+#nav ul li.selected a.forums span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -22px -21px;}
+#nav ul li.selected a.isbirlik span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -45px -21px;}
+#nav ul li.selected a.haberler span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -68px -21px;}
+#nav ul li.selected a.etkinlikler span { width:22px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -91px -21px;}
+#nav ul li.selected a.ilanlar span { width:21px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -114px -21px;}
+#nav ul li.selected a.firmalar span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -135px -21px;}
+#nav ul li.selected a.makaleler span { width:20px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -158px -21px;}
+#nav ul li.selected a.videolar span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -178px -21px;}
+#nav ul li.selected a.download span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -201px -21px;}
+
+#leftPanel { width: 385px; margin-left:5px; float: left; }
+#rightPanel { width: 600px;  float: left; }
+
+#footer { position: relative; width:990px; font-size:11px;}
+#copyright { position: absolute; top:5px; left:0; }
+#reserved { position: absolute; top:30px; left:0;}
+#links { position: absolute; top:5px; left:300px;}
+#links ul { margin:0; padding:0; list-style: none; }
+#links ul li { float:left; margin-left: 20px; }
+
+.smalldesc { font-size:11px; color:#666666;}
+.inputHome { width:200px; box-shadow: 0 0 0 2px #eeeeee; padding:6px; font-size:14px; border:1px solid #CCCCCC; }
+
+.btn { white-space: nowrap; font-size:12.5px; word-spacing:-1px; font-weight: bold; font-family:'Museo700',sans-serif; font-weight: bold; border-radius:20px; -moz-border-radius:20px; vertical-align: middle;  }
+.btn:hover { text-decoration: none;  }
+
+.btnBlue {   background: url(../images/buttons.jpg); color:#F4FAFF; padding:10px 15px 10px 15px; border:1px solid #000000; -moz-box-shadow:inset 0 1px 0 0 #B7DBFF; text-shadow:1px 1px 0 #497FDC; }
+.btnBlue:hover { background: url(../images/buttons.jpg) 0 -48px; }
+.btnBlue:focus {   background: url(../images/buttons.jpg) 0 -96px; }
+
+.btnDarkBlue {   background: url(../images/buttons.jpg) 0 -144px; color:#FFFFFF; padding:10px 15px 10px 15px; border:1px solid #000000; -moz-box-shadow:inset 0 1px 0 0 #3E7CBB; text-shadow:1px 1px 0 #18324B; }
+.btnDarkBlue:hover {   background: url(../images/buttons.jpg) 0 -192px; }
+.btnDarkBlue:focus {   background: url(../images/buttons.jpg) 0 -240px; }
+
+.btnRed {   background: url(../images/buttons.jpg) 0 -286px; color:#F4FAFF; padding:10px 15px 10px 15px; border:1px solid #571717; -moz-box-shadow:inset 0 1px 0 0 #D55757; text-shadow:1px 1px 0 #571717; }
+.btnRed:hover { background: url(../images/buttons.jpg) 0 -334px; }
+.btnRed:focus {   background: url(../images/buttons.jpg) 0 -382px; }
+
+
+/********************* WARNINGS ******************************/
+.warning { width:auto; border: 1px solid #FFCC33; font-size:11px; margin-top:3px;   margin-bottom: 3px; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#FFE28C url(../images/warnings/warning.png) no-repeat 10px 8px ;}
+.pending { width:auto; border: 1px solid #FFCC33; font-size:11px; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#FFE28C url(../images/warnings/pending.gif) no-repeat 10px 8px ;}
+.success { width:auto; border: 1px solid #33CC00; font-size:11px; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#CCFFBB url(../images/warnings/success.png) no-repeat 10px 8px ;}
+.alert   { width:auto; border: 1px solid #CC0000; font-size:11px; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#FFCCCC url(../images/warnings/alert.png) no-repeat 10px 8px ;}
+
+/********************* FORM **********************************/
+.formTable label { font-family: Tahoma; color:#666666; font-weight: bold; padding:5px 0 5px 0; }
+.formTable label:after { content : ":"}
+
+/********************* Anasayfada **********************************/
+hr.anasayfaDotted {border-bottom: 1px dashed; margin: 25px 50px;}
+
+/********************* Anasayfada **********************************/
+h1.anasayfaH1 {border-bottom: 1px dashed; margin-bottom: 20px; padding-bottom: 5px;}

@@ -1,0 +1,302 @@
+/**
+* Style.css
+*/
+
+@import url('reset.css');
+
+
+@font-face {
+font-family: 'Museo500';
+src: url('http://localhost/e-meslek.net/public/fonts/museo500-regular-webfont.eot');
+src: url('http://localhost/e-meslek.net/public/fonts/museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('http://localhost/e-meslek.net/public/fonts/museo500-regular-webfont.woff') format('woff'),
+url('http://localhost/e-meslek.net/public/fonts/museo500-regular-webfont.ttf') format('truetype'),
+url('http://localhost/e-meslek.net/public/fonts/museo500-regular-webfont.svg#Museo500') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Museo700';
+src: url('http://localhost/e-meslek.net/public/fonts/museo700-regular-webfont.eot');
+src: url('http://localhost/e-meslek.net/public/fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('http://localhost/e-meslek.net/public/fonts/museo700-regular-webfont.woff') format('woff'),
+url('http://localhost/e-meslek.net/public/fonts/museo700-regular-webfont.ttf') format('truetype'),
+url('http://localhost/e-meslek.net/public/fonts/museo700-regular-webfont.svg#Museo700') format('svg');
+font-weight: normal;
+font-style: normal;
+} 
+
+/** LAYOUT */
+body { margin:0; font-family: Tahoma; font-size:12px; color:#333333; background:url(../images/bg.jpg) repeat-x top center #EEEEEE;}
+#head-wrapper {background: url(../images/top.png) repeat-x;  }
+#wrapper{ background: #EEEEEE; text-align: center; }
+#body-wrapper{ display: inline-block; border-left:1px solid #CCCCCC; text-align: left; border-right: 1px solid #CCCCCC; border-bottom:1px solid #CCCCCC; background: #FFFFFF; width:992px; }
+#header { height: 60px; width:992px; margin: auto; position: relative;}
+#logo { position: absolute; top:12px; left:0px; width:300px; height:31px; background: url(../images/logo.png) no-repeat}
+
+#sub-header { height: 240px;}
+#split { position:absolute; top:10px; left:205px; display:block; width:516px; height: 155px; background: url(../images/split.png) no-repeat;}
+
+#topnav {  position: absolute; top:17px; right:0; }
+#topnav ul { list-style: none; margin: 0; padding:6px 3px 3px 3px;}
+#topnav ul li { float:right; margin-right:20px;}
+#topnav ul li a { font-family: 'Museo700',Tahoma; font-size:13px; font-weight: bold; color:#FFFFFF;}
+
+#slogan { width:603px; height:75px; position:absolute; top:15px; left:0; background: url(../images/slogan.png) no-repeat;}
+#subslogan {  position:absolute; top:140px; font-size:14px; left:0;}
+#signup { position: absolute; top:85px; background: url(../images/signup.png) no-repeat; width:199px; height:40px; display:block;  }
+#signup:hover { cursor: pointer; background: url(../images/signup.png) no-repeat 0 -40px; width:199px; height:40px; display:block;  }
+
+#loginContainer { position: absolute; top:10px; right:0; width:246px; height: 83px; background: url(../images/loginbg.png) no-repeat; }
+#login { position: absolute; top:100px; right:0; background: url(../images/login.png) no-repeat; width:144px; height:40px; display:block;  }
+#login:hover { cursor: pointer; background: url(../images/login.png) no-repeat 0 -40px; width:144px; height:40px; display:block;  }
+
+#headerLogin { color:#FFFFFF; font-size:11px; position: absolute; padding:4px; top:45px; left:230px; background: url(../images/headerLogin.png) no-repeat; width:723px; height:28px; }
+#headerLogin #l-email { padding:7px 10px 3px 30px; color:#333333; font-size:12px; border:0; background: none; width:160px; }
+#headerLogin #l-password { margin-left:5px; color:#333333; padding:7px 10px 3px 20px; font-size:12px; border:0; background: none; width:165px; }
+#headerLogin img { margin-left:5px;}
+
+
+#nav { margin:auto; height: 53px; width:992px; background: url(../images/nav-bg.jpg) repeat-x; border-top:1px solid #0D4D68; border-left:1px solid #0D4D68; border-right: 1px solid #0D4D68; }
+#nav ul {list-style: none; padding:0; margin: 0;}
+#nav ul li {float:left; margin: 3px 3px 0 3px; text-align: center; }
+#nav ul li a {display:block; padding-top:6px; font-size:11px; color:#FFFFFF; width:84px; height: 43px;}
+#nav ul li:hover {background:#4AB8E9;}
+#nav ul li.selected { background: url(../images/nav-hover.jpg) repeat-x; border-left:1px solid #676767; border-right: 1px solid #676767; }
+#nav ul li.selected a { color:#333333; padding-top: 7px; }
+
+#nav ul li a.home span { width:22px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) no-repeat;}
+#nav ul li a.meslekler span { width:33px; margin-left:25px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -222px 0 no-repeat;}
+#nav ul li a.forums span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -22px 0  no-repeat;}
+#nav ul li a.isbirlik span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -45px 0  no-repeat;}
+#nav ul li a.haberler span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -68px 0  no-repeat;}
+#nav ul li a.etkinlikler span { width:22px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -91px 0  no-repeat;}
+#nav ul li a.ilanlar span { width:21px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -114px 0  no-repeat;}
+#nav ul li a.firmalar span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -135px 0  no-repeat;}
+#nav ul li a.makaleler span { width:20px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -158px 0  no-repeat;}
+#nav ul li a.videolar span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -178px 0  no-repeat;}
+#nav ul li a.download span { width:21px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -201px 0  no-repeat;}
+
+#nav ul li.selected a.home span { width:22px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) 0 -21px;}
+#nav ul li.selected a.meslekler span { width:33px; margin-left:25px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -222px -21px;}
+#nav ul li.selected a.forums span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -22px -21px;}
+#nav ul li.selected a.isbirlik span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -45px -21px;}
+#nav ul li.selected a.haberler span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -68px -21px;}
+#nav ul li.selected a.etkinlikler span { width:22px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -91px -21px;}
+#nav ul li.selected a.ilanlar span { width:21px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -114px -21px;}
+#nav ul li.selected a.firmalar span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -135px -21px;}
+#nav ul li.selected a.makaleler span { width:20px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -158px -21px;}
+#nav ul li.selected a.videolar span { width:23px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -178px -21px;}
+#nav ul li.selected a.download span { width:21px; margin-left:30px; margin-bottom: 3px; height:21px; display:block; background: url(../images/nav.png) -201px -21px;}
+
+#headerUserMenu { float:left; width: 780px; list-style: none; margin:7px 0 0 5px; padding:0; line-height: normal;}
+#headerUserMenu li { float:left; margin:0 2px; position: relative;}
+#headerUserMenu li.menu100 {  background: url(../images/menu100.png) no-repeat; width:100px; height: 34px;}
+#headerUserMenu li.menu120 {  background: url(../images/menu120.png) no-repeat; width:120px; height: 34px;}
+#headerUserMenu li a { color:#FFFFFF; font-weight: bold; font-size:11px; display:block; padding:11px 5px 8px 10px;}
+#headerUserMenu li.menu100 a:hover { text-decoration: none; background: url(../images/menu100-hover.png) no-repeat;}
+#headerUserMenu li.menu120 a:hover { text-decoration: none; background: url(../images/menu120-hover.png) no-repeat;}
+#headerUserMenu li a img {vertical-align: bottom;}
+#headerUserMenu li a span { background: url(../images/count.png) no-repeat; display: block; padding-top:5px; font-size:11px; font-weight: bold; position: absolute; top:-10px; right:-8px; z-index:2; width:24px; height: 24px; color: #FFFFFF; text-align: center;}
+#headerUserMenu li.blocker { background: url(../images/nav-blocker.jpg) no-repeat; display: block; width:3px; height: 33px; }
+
+.subMenu ul { margin:0 0 5px 0; padding:0; list-style: none;}
+.subMenu ul li { padding: 2px 0; border-bottom: 1px solid #CCCCCC;}
+.subMenu ul li:first-child { padding-top:0;}
+.subMenu ul li:last-child { border-bottom: none;}
+.subMenu ul li a { color:#FFFFFF; font-size:11px; font-weight: bold; background: url(../images/subMenu.jpg) no-repeat; width:%100; height: 17px; padding:9px 4px 4px 10px; display:block;}
+
+#searchBar { position: absolute; top:82px; left: 442px; width:550px; height: 38px; background: url(../images/searchBar.png) no-repeat}
+#searchBar input { float: left; margin:12px 0 0 46px; width:360px; background:none; border: 0;   }
+#searchBar a.ara {  float:left; display: block; width:40px; height: 26px; margin: 7px 0 0 10px   }
+#searchBar a.detayliarama { float: left; display: block; width:80px; height: 26px; margin: 7px 0 0 10px    }
+
+.menu { border:2px solid #333333;}
+.menu ul { margin:0; padding: 0; list-style: none;}
+.menu ul li { background: url(../images/menu-bg.jpg) no-repeat;}
+.menu ul li a { display: block; cursor: pointer; height:36px; font-weight: bold; color:#FFFFFF; background: url(../images/menu-bg.jpg) no-repeat;}
+.menu ul li.selected { background: url(../images/menu-bg-blue.jpg) no-repeat;}
+.menu ul li:hover { background: url(../images/menu-bg-hover.jpg) no-repeat;}
+.menu ul li a#profilim { background: url(../images/profilim.png) no-repeat 10px 10px; }
+.menu ul li a#forumlar{ background: url(../images/forumlar.png) no-repeat 10px 10px; }
+.menu ul li a#isbirligi{ background: url(../images/isbirligi.png) no-repeat 10px 10px; }
+.menu ul li a#haberler{ background: url(../images/haberleri.png) no-repeat 10px 10px; }
+.menu ul li a#etkinlikler{ background: url(../images/etkinlikler.png) no-repeat 10px 10px; }
+.menu ul li a#yazilar{ background: url(../images/yazilar.png) no-repeat 10px 10px; }
+.menu ul li a#ilanlar{ background: url(../images/ilanlar.png) no-repeat 10px 10px; }
+.menu ul li a#firmalar{ background: url(../images/firmalar.png) no-repeat 10px 10px; }
+
+.menu ul li ul li { background: url(../images/border.jpg) repeat-x bottom #FFFFFF;}
+.menu ul li ul li a{ font-weight: normal; color:#666666; display: block; padding:7px 5px 12px 30px; height:10px; background: url(../images/border.jpg) repeat-x bottom #FFFFFF;}
+.menu ul li ul li a:hover { background:#EEEEEE;}
+.menu ul li ul li:hover { background: url(../images/border.jpg) repeat-x bottom #EEEEEE;}
+
+.profile { list-style: none; list-style-image: none; margin:0; padding:0;}
+.profile li {  background: url(../images/border.jpg) repeat-x bottom; }
+.profile li a{ display: block; padding:6px 4px 6px 4px; font-size:11px; }
+.profile li a.passwordIcon { background: url(../images/password.png) no-repeat 10px 8px; padding-left:30px; }
+.profile li a.profileIcon { background: url(../images/profile.png) no-repeat 10px 8px; padding-left:30px; }
+.profile li a.infoIcon { background: url(../images/info.png) no-repeat 10px 8px; padding-left:30px; }
+.profile li a.settingsIcon { background: url(../images/settings.png) no-repeat 10px 8px; padding-left:30px; }
+.profile li a.friendsIcon { background: url(../images/friends.png) no-repeat 6px 8px; padding-left:30px; }
+.profile li a.logoutIcon { background: url(../images/logout.png) no-repeat 10px 8px; padding-left:30px; }
+.profile li a.messagesIcon { background: url(../images/mesajlar.png) no-repeat 9px 8px; padding-left:30px; }
+
+
+
+#home-left { width: 320px; float:left;}
+#home-left #signuplogin { position: relative; width: 320px; height: 441px;}
+#home-left #signuplogin #signupFormContainer { position: absolute; top:0px; left:0px; width:300px; height: 300px;}
+#home-left #signuplogin #passwordFormContainer { position: absolute; top:106px; left:20px; width:300px; height: 300px;}
+
+.bottomButtonContainer { margin-top:10px; height: 30px;}
+.bottomButtonContainer .bottomButtonContainerLeft{ width:200px; float: left; color:#FFFFFF;}
+.bottomButtonContainer .bottomButtonContainerRight{  text-align: right; width:100px; float: left;}
+
+#home-right{ width:640px; float: left;}
+
+/********************* BUTTONS *******************************/
+.btn { white-space: nowrap; font-size:12.5px; word-spacing:-1px; font-weight: bold; font-family:'Museo700',sans-serif; border-radius:5px; -moz-border-radius:5px; vertical-align: middle;  }
+.btn:hover { text-decoration: none;  }
+
+.btnBlue {   background: url(../images/buttons.jpg); color:#F4FAFF; padding:10px 15px 10px 15px; border:1px solid #000000; -moz-box-shadow:inset 0 1px 0 0 #B7DBFF; text-shadow:1px 1px 0 #497FDC; }
+.btnBlue:hover { background: url(../images/buttons.jpg) 0 -48px; }
+.btnBlue:focus {   background: url(../images/buttons.jpg) 0 -96px; }
+
+.btnDarkBlue {   background: url(../images/buttons.jpg) 0 -144px; color:#FFFFFF; padding:10px 15px 10px 15px; border:1px solid #000000; -moz-box-shadow:inset 0 1px 0 0 #3E7CBB; text-shadow:1px 1px 0 #18324B; }
+.btnDarkBlue:hover {   background: url(../images/buttons.jpg) 0 -192px; }
+.btnDarkBlue:focus {   background: url(../images/buttons.jpg) 0 -240px; }
+
+.btnRed {   background: url(../images/buttons.jpg) 0 -286px; color:#F4FAFF; padding:10px 15px 10px 15px; border:1px solid #571717; -moz-box-shadow:inset 0 1px 0 0 #D55757; text-shadow:1px 1px 0 #571717; }
+.btnRed:hover { background: url(../images/buttons.jpg) 0 -334px; }
+.btnRed:focus {   background: url(../images/buttons.jpg) 0 -382px; }
+
+.profileButtons { margin-top:15px;}
+.btnSmall { padding:4px 14px 4px 14px; font-size:11px; margin-left: 5px; }
+
+.inputHome { font-size:16px; margin-bottom:10px; border-radius:5px; border:1px solid #999999; padding:10px 10px 10px 40px; width:250px;  }
+.inputHome:focus { border:1px solid #299FDC; -moz-box-shadow:0 0 0 2px #EEEEEE}
+
+/********************* WARNINGS ******************************/
+.warning { width:auto; border: 1px solid #FFCC33; font-size:11px; margin-top:3px; margin-bottom: 3px; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#FFE28C url(../images/warnings/warning.png) no-repeat 10px 8px ;}
+.pending { width:auto; border: 1px solid #FFCC33; font-size:11px;padding-top:10px; padding-bottom:6px; padding-left:30px; background:#FFE28C url(../images/warnings/pending.gif) no-repeat 10px 8px ;}
+.success { width:auto; border: 1px solid #33CC00; font-size:11px; padding-top:10px; padding-bottom:6px; padding-left:30px; background:#CCFFBB url(../images/warnings/success.png) no-repeat 10px 8px ;}
+.alert { width:auto; border: 1px solid #CC0000; font-size:11px;  padding-top:10px; padding-bottom:6px; padding-left:30px; background:#FFCCCC url(../images/warnings/alert.png) no-repeat 10px 8px ;}
+
+/********************* FORM **********************************/
+.formTable label { font-family: Tahoma; color:#666666; font-size:11px; font-weight: bold; padding:5px 0 5px 0; }
+.formTable label:after { content : ":"}
+.formTable td { border-bottom:1px solid #EEEEEE; font-family: Tahoma; }
+.formTable tr:last-child td { border-bottom:0px; }
+.formTable input[type=text],.formTable input[type=textfield],.formTable input[type=password],.formTable textarea { font-size:11px; width:200px; border-top:1px solid #BBBBBB; border-left:1px solid #BBBBBB; border-right:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; font-family:Tahoma; color:#333333; padding:3px;  }
+.formTable select { width:208px; border-top:1px solid #BBBBBB; border-left:1px solid #BBBBBB; border-right:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; font-family:Tahoma; color:#333333; font-size:12px; padding:3px; }
+
+/******************* LAYERS  *********************************/
+#leftPanel { width:300px; float:left; margin:10px 0 10px 10px; height:auto; }
+#rightPanel { float:left; width:660px; margin:10px 10px 10px 12px; background: #FFFFFF; border-top:0;}
+
+
+.pageTitle { height: 14px; font-size:11px; font-weight: bold; font-size:11px; margin-top:5px; padding: 4px 10px 4px 10px; border-left:2px solid #EEEEEE;}
+.pageTitle ul { list-style: none; margin: 0; padding:0;}
+.pageTitle ul li{float:left; margin-right: 10px; padding-right: 15px; padding-bottom:3px; background: url(../images/nav-arrow.png) no-repeat right;}
+.pageTitle ul li:last-child {background: none;}
+.pageTitle a { color:#BC7303; font-size:11px; font-family: Tahoma; font-weight: bold;}
+.pageTitle span.right { float: right; }
+
+#profileLeftContainer { width: 180px; height: 580px; padding:10px; background: url(../images/profile-bg.png) no-repeat}
+
+#searchFormContainer { margin:10px;}
+
+/************************ FORUMS ****************************/
+.forumRow { padding:7px; background:#FEEDC7; font-size:11px; font-weight: bold; color:#BC7303; border-bottom: 1px solid #CCCCCC; }
+.forumRow2 { padding:4px ; background: #F7F7F7; border-bottom:1px solid #EEEEEE; font-size:11px; color:#666666; }
+.subForumRow { padding:10px 10px 10px 4px; font-size:11px; line-height: 16px; border-bottom:1px solid #DDDDDD; }
+.subForumRow a {color:#333333}
+.subForumRowLastMessage { display: block; height: 17px; overflow: hidden; width:140px; }
+
+.forumkonu { display:inline-block; padding:15px 0 15px 0; border-bottom:1px solid #EEEEEE;}
+.forumkonu span { display:block; width:410px; float:left;}
+.forumkonu div { float:left; width:250px; text-align: right}
+
+
+.forummesaj { position:relative; border-bottom: 1px solid #EEEEEE; padding:0; width:100%; margin:0; display:inline-block;}
+.forummesajleft { width:45px; padding:10px 10px 10px 0; float:left; }
+.forummesajright { width:560px; float:left;}
+.forummesajauthor { font-size:11px; color:#666666; font-weight: normal; padding-bottom: 5px; margin-top:10px; border-bottom: 1px solid #EEEEEE;}
+.forummesajauthor b {color:#2F547E;}
+.forummesajdescription { padding:10px 0 10px 0; font-size:12px;  line-height:22px;}
+.forummesajdate { font-size:11px; color:#666666; position: absolute; top:10px; right:10px;}
+.forummesajbuttons { font-size:11px; color:#666666; position: absolute; top:30px; right:0px;}
+.forumresult { font-size:11px; color:#666666; position: absolute; top:40px; right:0px; width:200px;}
+
+.pagination { font-size: 6px; padding:9px 5px 8px 10px; margin-top:5px; border:1px solid #CCCCCC; background: url(../images/block-top.jpg) repeat-x; height:13px;}
+.pagination a { padding:4px 5px 4px 5px; border:1px solid #1C6C9A; font-size:11px; font-weight: bold; text-shadow:1px 1px 0 #1C6C9A; background: url(../images/pagination-bg.jpg) repeat-x #F7F7F7; color:#FFFFFF}
+.pagination strong { padding:4px 5px 4px 5px; border:1px solid #333333; font-size:11px; font-weight: bold; text-shadow:1px 1px 0 #000000; background: url(../images/pagination-bg.jpg) repeat-x 0px -52px; color:#FFFFFF}
+.pagination a:hover {background: url(../images/pagination-bg.jpg) 0 -26px repeat-x #F7F7F7; text-decoration: none;  }
+
+.borderbottom {background: url(../images/border.jpg) repeat-x bottom; }
+.fix {clear:both }
+
+/********************* BLOCK *********************************/
+.block { border:1px solid #DBDBDB; background: #FFFFFF; display: inline-block; width:100%; margin-bottom: 10px; }
+.block .head { border-bottom:1px solid #DBDBDB; font-size:14px; padding:8px 5px 2px 10px; position: relative; background: url(../images/block-top.jpg) repeat-x; height: 20px; }
+.block .head span.right { position: absolute; right:8px; top:0px; }
+
+.friendlistmenu { list-style: none; margin:0; padding:0;}
+.friendlistmenu li { margin-bottom:2px; padding:2px 5px 2px 3px; border-bottom:1px solid #EEEEEE; }
+.friendlistmenu li a { display: block;   }
+
+/************ BUTTON ************/
+.button { border: 1px solid #999999; font-size:11px; padding:3px 5px 4px 5px; font-weight: bold; font-family: Tahoma; }
+.button:hover { border: 1px solid #666666; background: #DDDDDD; cursor: pointer; font-size:11px; padding:3px 5px 4px 5px; font-weight: bold; font-family: Tahoma; }
+
+.mansetHaber { list-style: none; padding: 0; margin: 0;}
+.mansetHaber li { background: url(../images/border.jpg) repeat-x bottom;}
+.mansetHaber li a { font-size:11px; display: block; padding:2px 5px 8px 5px; font-weight: bold; height: 15px; line-height: 20px; overflow: hidden}
+
+.itemTitle { background:#F7F7F7; padding:8px 3px 6px 10px; margin-bottom: 5px; color:#555555; border-bottom:1px solid #CCCCCC; font-size:11px; font-weight: bold; color:#BC7303;}
+
+.category { list-style: none; list-style-image:none; margin: 0px; padding:0; }
+.category li { background: url(../images/border.jpg) repeat-x bottom }
+.category li a { font-weight: bold; font-size:11px;  display: block; padding:7px 5px 5px 5px; }
+
+#mesleksecimi { width:300px;}
+#mesleksecimi ul { list-style: none; padding:0;margin: 0; }
+#mesleksecimi ul li {  float:left;}
+#mesleksecimi ul li a { color:#555555; font-weight: bold; display:block; padding:4px; width:130px;  }
+#mesleksecimi ul li a:hover { text-decoration: none;}
+
+#leftdesc{ background: url(../images/left-bg.png) no-repeat; width:152px; height: 252px;}
+
+#forumdansonkonular { width:330px; height: 300px; padding:37px 0 0 9px ; background: url(../images/forumdansonkonular.png) no-repeat; margin-top:10px;}
+
+.smalldesc { font-size:11px; color:#999999; font-weight: normal; letter-spacing: 0;}
+
+table.display{ border-collapse: collapse; }
+table.display thead th { border-left:1px solid #FFFFFF; padding: 3px 10px 3px 10px; color:#424242; border-bottom:1px solid #E7E7E7; border-right:1px solid #E7E7E7; text-align: left;font-weight: normal; font-size:11px; height:30px;  background: url(../images/block-top.jpg) repeat-x 0 10px;}
+table.display thead th:last-child {border-right:0;}
+table.display tfoot th {padding: 3px 18px 3px 10px;border-top: 1px solid black;	font-weight: bold;}
+table.display tr.heading2 td { 	border-bottom: 1px solid #aaa;}
+table.display td { padding: 7px 10px; border-bottom:1px solid #E7E7E7;}
+table.display td.center { text-align: center; }
+
+
+#userContainer { float: left; width:206px; line-height: 20px; height: 68px; background: url(../images/userContainer.png) no-repeat; margin:10px 0;}
+#userContainer img { margin:5px; float: left;}
+
+
+#footer { }
+#footer .list { margin:0; padding:0; list-style: none; }
+
+/******************* ALFABE ************************************/
+#characters { padding:10px 0 0 0;}
+#characters ul { list-style: none; padding:0; margin:0; display: inline-block; }
+#characters ul li { float: left; margin-right:1px; }
+#characters ul li a { padding:2px 4px 2px 5px; display:block; width:9px; color:#FFFFFF; height: 14px; background: url(../images/characters.png) no-repeat;}
+#characters ul li a:hover { color:#000000; background: url(../images/characters.png) 0 -18px;}
+
+/******************** FİRMALAR *******************************/
+.firmaContainer { display: inline-block; padding:10px 0; margin-bottom: 4px; background: url(../images/border.jpg) repeat-x bottom left}
+.firmaContainer .logo { float: left; width:105px}
+.firmaContainer .description { padding:0 10px; width: 300px; float:left; }
+.firmaContainer .buttons { float: left; width:124px}
